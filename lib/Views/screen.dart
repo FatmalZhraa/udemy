@@ -175,8 +175,41 @@ List<CoursePic> C_development=[
                   Course( 'Design',C_design),
                   Course( 'Bussiness',C_bussiness),
                   Course( 'Develop',C_development),
-                    ]
-                ,),
+                      SizedBox(height:MediaQuery.of(context).size.height*0.09),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Colors.grey.shade700,
+                            width: 1,
+                          ),
+                        ),
+                        height: 160,
+                        width: MediaQuery.of(context).size.width*0.9,
+                        child: Column(
+
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(("Top companies trust\n            Udemy"),style: TextStyle(color: Colors.white,fontSize: 20),),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset("assests/box.png",scale: 6,),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 12),
+                                  child: Image.asset("assests/nlogo.png",scale: 40,),
+                                ),
+                                Text("Nasdaq",style: TextStyle(color: Colors.grey),),
+                                Image.asset("assests/vloks.jpeg",scale: 4,),
+                              ],
+                            ),
+                            Text("Try Udemy Business",style: TextStyle(color: Color.fromARGB(255, 182, 91, 198),),)
+                          ],
+                        ),
+                      ),
+                    ],
+                ),
                 ],
                   ),
             ),

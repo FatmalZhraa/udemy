@@ -76,6 +76,9 @@ flutter:
      - assests/b1.jpeg
      - assests/b2.jpeg
      - assests/b3.png
+     - assests/nlogo.png
+     - assests/vloks.jpeg
+     - assests/box.png
 
 
 

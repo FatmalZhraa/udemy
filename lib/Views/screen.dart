@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udemy/Commponents/containerscatego.dart';
 import 'package:udemy/Commponents/course.dart';
+import 'package:udemy/Commponents/coursepic.dart';
 
 class HomeScreen extends StatefulWidget{
-  HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -12,7 +12,21 @@ class HomeScreen extends StatefulWidget{
 int indexx=0;
 class _HomeScreenState extends State<HomeScreen> {
 List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorite,Icons.account_circle_outlined];
-
+List<CoursePic> C_design=[
+  CoursePic('4.8', 'Mr.Adam', const AssetImage('assests/c1.jpeg'), 'EGP 280', 'Drawing course'),
+  CoursePic('4.8', 'Mr.Ragnar', const AssetImage('assests/c3.jpg'), 'EGP 500', 'PS course'),
+  CoursePic('4.8', 'Mr.Ramez', const AssetImage('assests/c4.jpeg'), 'EGP 1000', 'Blinder 3D course')
+];
+List<CoursePic> C_bussiness=[
+  CoursePic('4.8', 'Mr.Adam', const AssetImage('assests/b3.png'), 'EGP 280', 'The Complete Business \nPlane Course'),
+  CoursePic('4.8', 'Mr.Ragnar', const AssetImage('assests/b2.jpeg'), 'EGP 500', 'How To Start A Business\n From Business Idea'),
+  CoursePic('4.8', 'Mr.Ramez', const AssetImage('assests/b1.jpeg'), 'EGP 1000', 'Business Lesson \nFrom a CEO')
+];
+List<CoursePic> C_development=[
+  CoursePic('4.6', 'Jose Portilla', const AssetImage('assests/course5.jpg'), 'EGP 280', 'The Complete Python \nBootcamp'),
+  CoursePic('4.7', 'Ai Sweigart', const AssetImage('assests/course3.jpg'), 'EGP 500', 'Machine Learning A-Z: Ai,\nPython& R+ChatGpt'),
+  CoursePic('4.5', 'Kirill , Hadelin', const AssetImage('assests/course4.jpg'), 'EGP 1000', '100 Days of code:The\n Complete Python')
+];
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -159,8 +173,10 @@ List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorit
                             ],
                           )
                     ),
-                  CourseDesign('Top courses in', 'Design'),
-                ]
+                  Course( 'Design',C_design),
+                  Course( 'Bussiness',C_bussiness),
+                  Course( 'Develop',C_development),
+                    ]
                 ,),
                 ],
                   ),
@@ -173,7 +189,7 @@ List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorit
             BottomNavigationBarItem(icon: 
             Icon(Icons.star,
             color: Colors.white,
-            size: 30,
+            size: 20,
             ),
             label: 'Featured',
             backgroundColor: Colors.black
@@ -181,7 +197,7 @@ List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorit
             BottomNavigationBarItem(icon: 
             Icon(Icons.search,
             color: Colors.white,
-            size: 30,
+            size: 20,
             ),
             label: 'Search',
             backgroundColor: Colors.black,
@@ -189,7 +205,7 @@ List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorit
             BottomNavigationBarItem(icon: 
             Icon(Icons.play_circle_fill_outlined,
             color: Colors.white,
-            size: 30,
+            size: 20,
             ),
             label: 'My learning',
             backgroundColor: Colors.black
@@ -197,7 +213,7 @@ List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorit
            BottomNavigationBarItem(icon: 
             Icon(Icons.favorite,
             color: Colors.white,
-            size: 30,
+            size: 20,
             ),
             label: 'wishlist',
          backgroundColor:Colors.black,
@@ -205,7 +221,7 @@ List<IconData>i=[Icons.star,Icons.search,Icons.play_arrow_outlined,Icons.favorit
             BottomNavigationBarItem(icon: 
             Icon(Icons.account_circle_outlined,
             color: Colors.white,
-            size: 30,
+            size: 20,
             ),
             label: 'Account',
             backgroundColor: Colors.black

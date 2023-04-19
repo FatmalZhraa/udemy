@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Abdo\\Desktop\\dart\\udemy_task\\udemy\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\udemy\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abdo\\Desktop\\dart\\udemy_task\\udemy\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\hp\\AndroidStudioProjects\\udemy\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

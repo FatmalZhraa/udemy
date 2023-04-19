@@ -2,15 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udemy/Commponents/coursepic.dart';
 
-class CourseDesign extends StatelessWidget{
-  List<CoursePic> co=[
-    CoursePic('4.8', 'Mr.Adam', const AssetImage('assests/c1.jpeg'), 'EGP 280', 'Drawing course'),
-    CoursePic('4.8', 'Mr.Ragnar', const AssetImage('assests/c3.jpg'), 'EGP 500', 'PS course'),
-    CoursePic('4.8', 'Mr.Ramez', const AssetImage('assests/c4.jpeg'), 'EGP 1000', 'Blinder 3D course')
-  ];
+class Course extends StatelessWidget{
   late String topic;
-  late String topic2;
-  CourseDesign(this.topic,this.topic2, {super.key});
+  late  List<CoursePic> L;
+  Course(this.topic, this.L);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -25,15 +20,15 @@ class CourseDesign extends StatelessWidget{
           children: [
             Row(
               children: [
-                Text(topic,
+                Text('Top courses in',
                 style: GoogleFonts.openSans(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
                 ),
-           
-                Text(topic2,
+
+                Text(topic,
                 style: GoogleFonts.openSans(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
@@ -49,9 +44,9 @@ class CourseDesign extends StatelessWidget{
               Row(
              mainAxisAlignment: MainAxisAlignment.start,
              children: [
-              for(int i=0;i<co.length;i++)
+              for(int i=0;i<L.length;i++)
              // SizedBox(width: MediaQuery.of(context).size.width*0.5,),
-                co[i],
+                L[i],
                 
                         ],
                       )

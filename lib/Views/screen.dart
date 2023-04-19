@@ -39,8 +39,7 @@ List<CoursePic> C_development=[
           Text('Sign in',
           style: GoogleFonts.openSans(
             fontSize: 23,
-            fontWeight: FontWeight.bold
-          ),
+            fontWeight: FontWeight.bold),
           )
         ]
         ),

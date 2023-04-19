@@ -1,4 +1,4 @@
-#Wed Apr 19 05:37:05 EET 2023
-base.0=C\:\\Users\\Abdo\\Desktop\\dart\\udemy_task\\udemy\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Apr 19 16:01:03 EET 2023
+base.0=C\:\\Users\\hp\\AndroidStudioProjects\\udemy\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

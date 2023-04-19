@@ -68,7 +68,18 @@ flutter:
      - assests/c2.jpeg
      - assests/c3.jpg
      - assests/c4.jpeg
-     
+     - assests/course1.jpg
+     - assests/course2.jpg
+     - assests/course3.jpg
+     - assests/course4.jpg
+     - assests/course5.jpg
+     - assests/b1.jpeg
+     - assests/b2.jpeg
+     - assests/b3.png
+
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:udemy/Views/screen.dart';
 
 class CoursePic extends StatelessWidget{
   late AssetImage pic;
@@ -16,8 +17,8 @@ class CoursePic extends StatelessWidget{
       child: Column(mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              height: MediaQuery.of(context).size.height*0.22,
-              width: MediaQuery.of(context).size.width*0.55,
+              height: MediaQuery.of(context).size.height*0.2,
+              width: MediaQuery.of(context).size.width*0.5,
               decoration: const BoxDecoration(
                 borderRadius:  BorderRadius.all(Radius.circular(100))
               ),
@@ -71,21 +72,11 @@ class CoursePic extends StatelessWidget{
             fontWeight: FontWeight.bold,
            ),
            ),
-           Container(
-            height: MediaQuery.of(context).size.height*0.035,
-            width: MediaQuery.of(context).size.width*0.17,
-            decoration: BoxDecoration(
-              color: Colors.amber[700],
-              borderRadius:const BorderRadius.all(Radius.circular(10))
+            ElevatedButton(onPressed: () => HomeScreen() ,
+              child: Text("Bestseller",style: TextStyle(color: Colors.black)),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.yellow.shade300,),
             ),
-            alignment: Alignment.center,
-            child: const Text('Bestseller',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-    
-            ),
-            ),
-           )
           ],
         ),
     );
